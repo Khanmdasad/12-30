@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish&display=swap');
+
+:root{
+    --bg-color: #E8E8F6;
+    --card-bg-color: #FFF;
+    --con1-icon-color: #FF68A7;
+    --con2-icon-color: #68A4FF;
+    --text-color:#121F38;
+    --btn1-bg-color: #FFE8F1;
+    --btn2-bg-color: #EDF4FF;
+    --btn1-text-color: #E02E79;
+    --btn2-text-color: #1B65D6;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// wrapper starts
+.wrapper{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+
+    // container starts
+    .container{
+        background: var(--card-bg-color);
+        width: 28.125rem;
+        height: 40vh; 
+        padding: 3rem 2rem;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        gap: 10px;
+        border: 1px solid var(--con1-icon-color);
+
+        // first icon start
+        .icon{
+            background: var(--con1-icon-color);
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            padding: 0.8rem;
+        }
+        // icon end
+
+        // header start
+        .header{
+            width: 18vw;
+            color: var(--text-color);
+            text-align: center;
+            font-family: 'Merriweather';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+        // header end
+
+        // text start
+        .text{
+            display: flex;
+            padding: 0 100px;
+            color: var(--text-color);
+            text-align: center;
+            font-family: Mulish;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            padding: 15px 25px;
+            border-radius: 20px;
+            background: var(--btn1-bg-color);
+            text-align: center;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+        }
+
+        
+        // text end
+
+        // header end
+    }
+    // container1 ends
+
+    // first class start
+    .first{
+        .btn{
+            a{
+                color: var(--btn1-text-color);
+            }
+        }
+    }
+    // first class end
+
+    //second class starts
+    .second{
+        background: var(--card-bg-color);
+        border: 1px solid var(--con2-icon-color);
+
+        // icon start
+        .icon{
+            background: var(--con2-icon-color);
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 0.9rem;
+        }
+
+        .btn{
+            background: var(--btn2-bg-color);
+            a{
+                color: var(--btn2-text-color);
+            }
+        }
+
+        
+        // icon ends
+    }
+    // secondclass ends
+}
+// wrapper ends
